@@ -1,0 +1,30 @@
+{
+  "name": "mmr-vaccine",
+  "version": "1.0.0",
+  "description": "MMR Vaccine man page",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bengl/mmr-vaccine.git"
+  },
+  "keywords": [
+    "mmr",
+    "vaccine",
+    "antivax",
+    "anti-vax",
+    "man",
+    "manpage"
+  ],
+  "author": "Bryan English <bryan@bryanenglish.com>",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/bengl/mmr-vaccine/issues"
+  },
+  "homepage": "https://github.com/bengl/mmr-vaccine",
+  "scripts": {
+    "prepublish": "marked-man README.md > mmr-vaccine.7"
+  },
+  "man": "mmr-vaccine.7",
+  "devDependencies": {
+    "marked-man": "^0.1.4"
+  }
+}
